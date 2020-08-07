@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewLorryFormController">
+   <children>
+      <JFXTextField fx:id="txtLorryNumber" labelFloat="true" layoutX="181.0" layoutY="143.0" onKeyPressed="#numberKeyPressedOnAction" onKeyReleased="#numberKeyReleasedOnAction" onKeyTyped="#numberKeyTypedOnAction" promptText="Lorry Number">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="256.0" layoutY="319.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="74.0" style="-fx-background-color: #53fb94; -fx-background-radius: 30;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtFirstName" labelFloat="true" layoutX="90.0" layoutY="241.0" prefHeight="44.0" prefWidth="183.0" promptText=" First Name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLastName" labelFloat="true" layoutX="293.0" layoutY="241.0" prefHeight="44.0" prefWidth="183.0" promptText="Last Name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

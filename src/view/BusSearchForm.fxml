@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="586.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BusSearchFormController">
+    <children>
+        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="42.0" layoutY="73.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="39.0" prefWidth="165.0" promptText="Enter Bus Number">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="18.0" />
+            </font>
+        </JFXTextField>
+        <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="226.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/searchContact.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <Label layoutX="89.0" layoutY="154.0" text="Bus Number">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="89.0" layoutY="207.0" text="First name">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="89.0" layoutY="262.0" text="Last name">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtBusNumber" editable="false" layoutX="213.0" layoutY="147.0" promptText="Not Found">
+            <font>
+                <Font size="19.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="txtFirstName" editable="false" layoutX="213.0" layoutY="200.0" promptText="Not Found">
+            <font>
+                <Font size="19.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="txtLastName" editable="false" layoutX="213.0" layoutY="255.0" promptText="Not Found">
+            <font>
+                <Font size="19.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <JFXButton fx:id="btnAddToParking" buttonType="RAISED" layoutX="379.0" layoutY="431.0" onAction="#btnAddToParkingOnAction" style="-fx-background-color: #c5a10d; -fx-background-radius: 30;" text="Add to the Parking" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Label layoutX="89.0" layoutY="317.0" text="Date">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="89.0" layoutY="372.0" text="Arrival Time">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtDate" layoutX="213.0" layoutY="310.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtArrivalTime" layoutX="213.0" layoutY="365.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <JFXTextField fx:id="txtWarning" editable="false" layoutX="285.0" layoutY="73.0" prefHeight="39.0" prefWidth="293.0" style="-jfx-focus-color: red; -jfx-unfocus-color: red; -fx-text-fill: red;" text="!Bus is already in the parking!" visible="false">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="20.0" />
+            </font>
+        </JFXTextField>
+    </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="224.0" prefWidth="314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CardPaymentFormController">
+   <children>
+      <TextField fx:id="txtCardNumber" layoutX="14.0" layoutY="20.0" prefHeight="44.0" prefWidth="289.0" promptText="Card Number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtMonthYear" layoutX="14.0" layoutY="77.0" prefHeight="44.0" prefWidth="138.0" promptText="Month / Year">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCVV" layoutX="159.0" layoutY="77.0" prefHeight="44.0" prefWidth="145.0" promptText="CVV">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnPay" layoutX="133.0" layoutY="132.0" onAction="#btnPayOnAction" style="-fx-background-color: black; -fx-background-radius: 30;" text="Pay" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="txtThankYou" alignment="TOP_LEFT" layoutX="11.0" layoutY="170.0" prefHeight="29.0" prefWidth="297.0" text="Thank You &amp; See you Again..Good Bye !!">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

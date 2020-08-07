@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="484.0" prefWidth="712.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCarDepartureTimeFormController">
+   <children>
+      <JFXTextField fx:id="txtSearchNumber" layoutX="41.0" layoutY="60.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="37.0" prefWidth="180.0" promptText="Enter Car Number">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <TextField fx:id="txtFirstName" editable="false" layoutX="197.0" layoutY="190.0" prefHeight="39.0" prefWidth="154.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="60.0" layoutY="193.0" text="First Name">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLastName" editable="false" layoutX="478.0" layoutY="188.0" prefHeight="39.0" prefWidth="154.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="380.0" layoutY="194.0" text="Last Name">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtArrivalTime" editable="false" layoutX="197.0" layoutY="260.0" prefHeight="39.0" prefWidth="154.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="60.0" layoutY="263.0" text="Arrival Time">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDepartureTime" editable="false" layoutX="197.0" layoutY="330.0" prefHeight="39.0" prefWidth="154.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="60.0" layoutY="333.0" text="Departure Time">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCarNumber" editable="false" layoutX="605.0" layoutY="79.0" prefHeight="30.0" prefWidth="75.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+      <Label layoutX="507.0" layoutY="87.0" text="Car Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="39.0" layoutX="243.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/searchContact.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="txtTotParkingFee" editable="false" labelFloat="true" layoutX="406.0" layoutY="330.0" promptText="Total Parking Fee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTotParkingTime" editable="false" labelFloat="true" layoutX="406.0" layoutY="260.0" promptText="Total Parking Time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

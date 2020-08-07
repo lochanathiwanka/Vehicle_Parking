@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="438.0" prefWidth="1030.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateVanDepartureTimeFormController">
+    <children>
+        <JFXTextField fx:id="txtSearchNumber" labelFloat="true" layoutX="51.0" layoutY="70.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="37.0" prefWidth="180.0" promptText="Enter Van Number">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="20.0" />
+            </font>
+        </JFXTextField>
+        <TextField fx:id="txtFirstName" editable="false" layoutX="207.0" layoutY="200.0" prefHeight="39.0" prefWidth="154.0" promptText="Not Found">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <Label layoutX="70.0" layoutY="203.0" text="First Name">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtLastName" editable="false" layoutX="488.0" layoutY="198.0" prefHeight="39.0" prefWidth="154.0" promptText="Not Found">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <Label layoutX="390.0" layoutY="204.0" text="Last Name">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtArrivalTime" editable="false" layoutX="207.0" layoutY="270.0" prefHeight="39.0" prefWidth="154.0" promptText="Not Found">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <Label layoutX="70.0" layoutY="273.0" text="Arrival Time">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtVanNumber" editable="false" layoutX="567.0" layoutY="91.0" prefHeight="30.0" prefWidth="75.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </JFXTextField>
+        <Label layoutX="469.0" layoutY="99.0" text="Van Number">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="70.0" fitWidth="39.0" layoutX="253.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/searchContact.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <JFXTextField fx:id="txtDepartureTime" layoutX="148.0" layoutY="350.0" onKeyPressed="#departureTimeKeyPressedOnAction" onKeyReleased="#departureTimeKeyReleasedOnAction" onKeyTyped="#departureTimeKeyTypedOnAction" prefHeight="39.0" prefWidth="180.0" promptText="Enter Departure Time">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="366.0" layoutY="357.0" onAction="#btnAddOnAction" style="-fx-background-color: #8f37e8; -fx-background-radius: 30;" text="Add" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="16.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXTextField fx:id="txtPaymentField" editable="false" layoutX="567.0" layoutY="316.0" prefHeight="37.0" prefWidth="60.0" visible="false">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </JFXTextField>
+        <Label fx:id="lblTotalPayment" layoutX="439.0" layoutY="322.0" text="Tottal Payment" visible="false">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblRS" layoutX="633.0" layoutY="322.0" text="RS" visible="false">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnPay" buttonType="RAISED" layoutX="578.0" layoutY="373.0" onAction="#btnPayOnAction" style="-fx-background-color: #fb0b5b; -fx-background-radius: 30;" text="Pay" textFill="WHITE" visible="false">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="16.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXTextField fx:id="lblSelectPaymentMethod" editable="false" layoutX="706.0" layoutY="91.0" promptText="Select Payment Method" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </JFXTextField>
+        <JFXRadioButton fx:id="rbCard" layoutX="738.0" layoutY="213.0" onAction="#rbCardOnAction" text="Debit / Credit Card" visible="false">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="16.0" />
+            </font>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="rbCash" layoutX="738.0" layoutY="171.0" onAction="#rbCashOnAction" text="Cash" visible="false">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="16.0" />
+            </font>
+        </JFXRadioButton>
+        <TextField fx:id="txtCardNumber" layoutX="691.0" layoutY="245.0" prefHeight="44.0" prefWidth="289.0" promptText="Card Number" visible="false">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtMonthYear" layoutX="691.0" layoutY="302.0" prefHeight="44.0" prefWidth="138.0" promptText="Month / Year" visible="false">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtCVV" layoutX="836.0" layoutY="302.0" prefHeight="44.0" prefWidth="145.0" promptText="CVV" visible="false">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <JFXButton fx:id="btnPay2" buttonType="RAISED" layoutX="810.0" layoutY="357.0" onAction="#btnPay2OnAction" style="-fx-background-color: black; -fx-background-radius: 30;" text="Pay" textFill="WHITE" visible="false">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Label fx:id="txtThankYou" alignment="TOP_LEFT" layoutX="688.0" layoutY="395.0" prefHeight="29.0" prefWidth="297.0" text="Thank You &amp; See you Again..Good Bye !!" visible="false">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

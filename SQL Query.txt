@@ -1,0 +1,145 @@
+create database sunrise_shopping_complex;
+use sunrise_shopping_complex;
+
+create table carDetails(
+    cID int not null auto_increment,
+    number varchar(10) unique,
+    firstName varchar(20),
+    lastName varchar(20),
+    registerDate datetime default current_timestamp,
+    primary key (cID)
+);
+
+create table vanDetails(
+    vID int not null auto_increment ,
+    number varchar(10) unique,
+    firstName varchar(20),
+    lastName varchar(20),
+    registerDate datetime default current_timestamp,
+    primary key (vID)
+);
+
+create table busDetails(
+    bID int not null auto_increment ,
+    number varchar(10) unique,
+    firstName varchar(20),
+    lastName varchar(20),
+    registerDate datetime default current_timestamp,
+    primary key (bID)
+);
+
+create table lorryDetails(
+    lID int not null auto_increment,
+    number varchar(10) unique,
+    firstName varchar(20),
+    lastName varchar(20),
+    registerDate datetime default current_timestamp,
+    primary key (lID)
+);
+
+#--------------------------------------------------------------------
+
+create table carParking(
+    cID int not null auto_increment,
+    number varchar(10),
+    firstName varchar(20) not null ,
+    lastName varchar(20),
+    date varchar(15) not null ,
+    arrivalTime varchar(15) not null ,
+    departureTime varchar(15),
+    parkingFee double(10,2),
+    paymentStatus varchar(20),
+    primary key (cID)
+);
+
+create table carParkingTempory(
+                                  cID int not null auto_increment,
+                                  number varchar(10),
+                                  firstName varchar(20) not null ,
+                                  lastName varchar(20),
+                                  date varchar(15) not null ,
+                                  arrivalTime varchar(15) not null ,
+                                  departureTime varchar(15),
+                                  parkingFee double(10,2),
+                                  paymentStatus varchar(20),
+                                  primary key (cID)
+);
+
+create table vanParking(
+                           vID int not null auto_increment,
+                           number varchar(10),
+                           firstName varchar(20) not null ,
+                           lastName varchar(20),
+                           date varchar(15) not null ,
+                           arrivalTime varchar(15) not null ,
+                           departureTime varchar(15),
+                           parkingFee double(10,2),
+                           paymentStatus varchar(20),
+                           primary key (vID)
+);
+
+create table vanParkingTempory(
+                                  vID int not null auto_increment,
+                                  number varchar(10),
+                                  firstName varchar(20) not null ,
+                                  lastName varchar(20),
+                                  date varchar(15) not null ,
+                                  arrivalTime varchar(15) not null ,
+                                  departureTime varchar(15),
+                                  parkingFee double(10,2),
+                                  paymentStatus varchar(20),
+                                  primary key (vID)
+);
+
+create table busParking(
+                           bID int not null auto_increment,
+                           number varchar(10),
+                           firstName varchar(20) not null ,
+                           lastName varchar(20),
+                           date varchar(15) not null ,
+                           arrivalTime varchar(15) not null ,
+                           departureTime varchar(15),
+                           parkingFee double(10,2),
+                           paymentStatus varchar(20),
+                           primary key (bID)
+);
+
+create table busParkingTempory(
+                                  bID int not null auto_increment,
+                                  number varchar(10),
+                                  firstName varchar(20) not null ,
+                                  lastName varchar(20),
+                                  date varchar(15) not null ,
+                                  arrivalTime varchar(15) not null ,
+                                  departureTime varchar(15),
+                                  parkingFee double(10,2),
+                                  paymentStatus varchar(20),
+                                  primary key (bID)
+);
+
+create table lorryParking(
+                           lID int not null auto_increment,
+                           number varchar(10),
+                           firstName varchar(20) not null ,
+                           lastName varchar(20),
+                           date varchar(15) not null ,
+                           arrivalTime varchar(15) not null ,
+                           departureTime varchar(15),
+                           parkingFee double(10,2),
+                           paymentStatus varchar(20),
+                           primary key (lID)
+);
+
+create table lorryParkingTempory(
+                                    lID int not null auto_increment,
+                                    number varchar(10),
+                                    firstName varchar(20) not null ,
+                                    lastName varchar(20),
+                                    date varchar(15) not null ,
+                                    arrivalTime varchar(15) not null ,
+                                    departureTime varchar(15),
+
+                                    parkingFee double(10,2),
+                                    paymentStatus varchar(20),
+                                    primary key (lID)
+);

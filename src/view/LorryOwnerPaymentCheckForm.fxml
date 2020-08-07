@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="630.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LorryOwnerPaymentCheckFormController">
+    <children>
+        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="36.0" layoutY="60.0" onKeyPressed="#searchKeyPressed" onKeyReleased="#searchKeyReleased" onKeyTyped="#searchKeyTyped" prefHeight="42.0" prefWidth="186.0" promptText="Enter Lorry Number">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="19.0" />
+            </font>
+        </JFXTextField>
+        <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="227.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/searchContact.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <Label layoutX="78.0" layoutY="204.0" text="First name">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="78.0" layoutY="257.0" text="Last name">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="78.0" layoutY="309.0" text="Payment">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFirstNameField" editable="false" layoutX="210.0" layoutY="197.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtLastNameField" editable="false" layoutX="210.0" layoutY="250.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtPaymentField" editable="false" layoutX="210.0" layoutY="302.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <Label layoutX="76.0" layoutY="154.0" text="Lorry Number">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtLorryNumberField" editable="false" layoutX="208.0" layoutY="147.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <JFXButton fx:id="btnRemove" buttonType="RAISED" layoutX="504.0" layoutY="344.0" onAction="#btnRemoveOnAction" style="-fx-background-color: #fb2e72; -fx-background-radius: 30;" text="Remove" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>

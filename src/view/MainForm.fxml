@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <JFXButton fx:id="btnVehicleEntry" buttonType="RAISED" layoutX="105.0" layoutY="252.0" onAction="#vehicleEntryOnAction" prefHeight="37.0" prefWidth="158.0" ripplerFill="#1e5475" style="-fx-background-color: black; -fx-background-radius: 30;" text="Security" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="105.0" layoutY="355.0" onAction="#vehicleExitOnAction" prefHeight="38.0" prefWidth="158.0" ripplerFill="#2b668d" style="-fx-background-color: black; -fx-background-radius: 30;" text="Cashier" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="105.0" layoutY="462.0" onAction="#paymentOnAction" prefHeight="38.0" prefWidth="158.0" ripplerFill="#c6787d" style="-fx-background-color: black; -fx-background-radius: 30;" text="Payment" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <AnchorPane fx:id="stagePane" layoutX="286.0" layoutY="10.0" prefHeight="700.0" prefWidth="1000.0">
+         <children>
+            <ImageView fitHeight="680.0" fitWidth="976.0" layoutX="7.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mainFormImage.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="911.0" layoutY="640.0" onAction="#exitOnAction" prefHeight="38.0" prefWidth="67.0" ripplerFill="#c6787d" style="-fx-background-color: black; -fx-background-radius: 30;" text="Exit" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

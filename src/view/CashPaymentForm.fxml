@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="224.0" prefWidth="314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashPaymentFormController">
+   <children>
+      <Label alignment="TOP_LEFT" layoutX="9.0" layoutY="98.0" prefHeight="29.0" prefWidth="297.0" text="Thank You &amp; See you Again..Good Bye !!">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
