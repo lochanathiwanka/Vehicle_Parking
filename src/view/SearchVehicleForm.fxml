@@ -22,7 +22,7 @@
                 <Font size="16.0" />
             </font>
         </JFXRadioButton>
-        <JFXTextField editable="false" layoutX="30.0" layoutY="164.0" prefHeight="37.0" prefWidth="147.0" promptText="Select vehicle type">
+        <JFXTextField editable="false" layoutX="30.0" layoutY="164.0" prefHeight="37.0" prefWidth="178.0" promptText="Select vehicle type">
             <font>
                 <Font name="System Bold" size="16.0" />
             </font>

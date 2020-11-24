@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="482.0" prefWidth="586.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LorrySearchFormController">
     <children>
-        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="42.0" layoutY="73.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="39.0" prefWidth="177.0" promptText="Enter Lorry Number">
+        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="42.0" layoutY="73.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="39.0" prefWidth="183.0" promptText="Enter Lorry Number">
             <font>
                 <Font name="Arial Rounded MT Bold" size="18.0" />
             </font>
@@ -40,7 +40,7 @@
                 <Font size="19.0" />
             </font>
         </Label>
-        <TextField fx:id="txtLorryNumber" editable="false" layoutX="213.0" layoutY="147.0" promptText="Not Found">
+        <TextField fx:id="txtLorryNumber" editable="false" layoutX="225.0" layoutY="146.0" promptText="Not Found">
             <font>
                 <Font size="19.0" />
             </font>
@@ -48,7 +48,7 @@
                 <Cursor fx:constant="DEFAULT" />
             </cursor>
         </TextField>
-        <TextField fx:id="txtFirstName" editable="false" layoutX="213.0" layoutY="200.0" promptText="Not Found">
+        <TextField fx:id="txtFirstName" editable="false" layoutX="225.0" layoutY="199.0" promptText="Not Found">
             <font>
                 <Font size="19.0" />
             </font>
@@ -56,7 +56,7 @@
                 <Cursor fx:constant="DEFAULT" />
             </cursor>
         </TextField>
-        <TextField fx:id="txtLastName" editable="false" layoutX="213.0" layoutY="255.0" promptText="Not Found">
+        <TextField fx:id="txtLastName" editable="false" layoutX="225.0" layoutY="254.0" promptText="Not Found">
             <font>
                 <Font size="19.0" />
             </font>
@@ -82,12 +82,12 @@
                 <Font size="19.0" />
             </font>
         </Label>
-        <TextField fx:id="txtDate" layoutX="213.0" layoutY="310.0">
+        <TextField fx:id="txtDate" layoutX="225.0" layoutY="309.0">
             <font>
                 <Font size="19.0" />
             </font>
         </TextField>
-        <TextField fx:id="txtArrivalTime" layoutX="213.0" layoutY="365.0">
+        <TextField fx:id="txtArrivalTime" layoutX="225.0" layoutY="364.0">
             <font>
                 <Font size="19.0" />
             </font>

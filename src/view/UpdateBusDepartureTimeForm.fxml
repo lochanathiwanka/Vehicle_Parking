@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="438.0" prefWidth="1030.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateBusDepartureTimeFormController">
     <children>
-        <JFXTextField fx:id="txtSearchNumber" labelFloat="true" layoutX="51.0" layoutY="70.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="37.0" prefWidth="180.0" promptText="Enter Bus Number">
+        <JFXTextField fx:id="txtSearchNumber" labelFloat="true" layoutX="51.0" layoutY="70.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="39.0" prefWidth="189.0" promptText="Enter Bus Number">
             <font>
                 <Font name="Arial Rounded MT Bold" size="20.0" />
             </font>
@@ -31,7 +31,7 @@
                 <Font size="19.0" />
             </font>
         </Label>
-        <TextField fx:id="txtLastName" editable="false" layoutX="488.0" layoutY="198.0" prefHeight="39.0" prefWidth="154.0" promptText="Not Found">
+        <TextField fx:id="txtLastName" editable="false" layoutX="496.0" layoutY="198.0" prefHeight="39.0" prefWidth="154.0" promptText="Not Found">
             <font>
                 <Font size="18.0" />
             </font>
@@ -78,7 +78,7 @@
                 <Cursor fx:constant="DEFAULT" />
             </cursor>
         </ImageView>
-        <JFXTextField fx:id="txtDepartureTime" layoutX="148.0" layoutY="350.0" onKeyPressed="#departureTimeKeyPressedOnAction" onKeyReleased="#departureTimeKeyReleasedOnAction" onKeyTyped="#departureTimeKeyTypedOnAction" prefHeight="39.0" prefWidth="180.0" promptText="Enter Departure Time">
+        <JFXTextField fx:id="txtDepartureTime" layoutX="148.0" layoutY="350.0" onKeyPressed="#departureTimeKeyPressedOnAction" onKeyReleased="#departureTimeKeyReleasedOnAction" onKeyTyped="#departureTimeKeyTypedOnAction" prefHeight="39.0" prefWidth="201.0" promptText="Enter Departure Time">
             <font>
                 <Font size="18.0" />
             </font>

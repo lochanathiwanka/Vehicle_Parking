@@ -18,7 +18,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <JFXTextField editable="false" layoutX="40.0" layoutY="174.0" prefHeight="37.0" prefWidth="151.0" promptText="Select vehicle type">
+      <JFXTextField editable="false" layoutX="40.0" layoutY="174.0" prefHeight="37.0" prefWidth="158.0" promptText="Select vehicle type">
          <font>
             <Font name="Arial Rounded MT Bold" size="16.0" />
          </font>
@@ -46,7 +46,7 @@
             <Font size="16.0" />
          </font>
       </JFXRadioButton>
-      <JFXTextField editable="false" layoutX="432.0" layoutY="40.0" prefHeight="44.0" prefWidth="293.0" promptText="Vehicle Payments Status">
+      <JFXTextField editable="false" layoutX="432.0" layoutY="40.0" prefHeight="46.0" prefWidth="301.0" promptText="Vehicle Payments Status">
          <font>
             <Font name="Arial Rounded MT Bold" size="24.0" />
          </font>

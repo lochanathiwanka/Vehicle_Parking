@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="482.0" prefWidth="586.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VanSearchFormController">
     <children>
-        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="42.0" layoutY="73.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="39.0" prefWidth="165.0" promptText="Enter Van Number">
+        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="42.0" layoutY="73.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="39.0" prefWidth="173.0" promptText="Enter Van Number">
             <font>
                 <Font name="Arial Rounded MT Bold" size="18.0" />
             </font>

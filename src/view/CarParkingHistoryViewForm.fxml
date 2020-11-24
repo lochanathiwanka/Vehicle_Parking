@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="548.0" prefWidth="666.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CarParkingHistoryViewFormController">
    <children>
-      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="52.0" layoutY="79.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="37.0" prefWidth="144.0" promptText="Enter Car Number">
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="52.0" layoutY="79.0" onKeyPressed="#searchKeyPressedOnAction" onKeyReleased="#searchKeyReleasedOnAction" onKeyTyped="#searchKeyTypedOnAction" prefHeight="37.0" prefWidth="152.0" promptText="Enter Car Number">
          <font>
             <Font name="Arial Rounded MT Bold" size="16.0" />
          </font>
